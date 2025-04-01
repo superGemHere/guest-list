@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  min-height: 100vh;
+  min-width: 99vw;
+  max-width: 100vw;
+}

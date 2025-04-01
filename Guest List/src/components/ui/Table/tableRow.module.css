@@ -1,0 +1,42 @@
+.tableRow {
+   border-bottom: 1px solid #e5e7eb;
+ }
+ 
+ .tableRow:hover {
+   background-color: #f9fafb;
+ }
+ 
+ .tableCell {
+   padding: 0.75rem 1rem;
+   color: var(--primary-color);
+ }
+ 
+ .nameCell {
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   color: var(--primary-color);
+   gap: 0.5rem;
+ }
+ 
+ .coordsCell {
+   font-family: monospace;
+   font-size: 0.75rem;
+ }
+ 
+ .badge {
+   display: inline-flex;
+   align-items: center;
+   padding: 0.125rem 0.625rem;
+   border-radius: 9999px;
+   font-size: 0.75rem;
+   font-weight: 500;
+   background-color: var(--secondary-color-light);
+   color: var(--primary-color);
+ }
+
+ @media (max-width: 400px) {
+   .tableCell {
+      padding: 0.75rem 0.5rem;
+    }
+}

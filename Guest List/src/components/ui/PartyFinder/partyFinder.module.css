@@ -1,0 +1,104 @@
+.container {
+   position: relative;
+   height: auto;
+   background-color: transparent;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .radar {
+   position: relative;
+   width: 80vmin;
+   height: 80vmin;
+   max-width: 300px;
+   max-height: 300px;
+   border-radius: 50%;
+   background-color: rgba(0, 0, 0, 0.8);
+   box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .circle {
+   position: absolute;
+   border: 1px dashed rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+ }
+ 
+ .member {
+   position: absolute;
+   width: 4px;
+   height: 4px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.3);
+   transform: translate(-50%, -50%);
+   z-index: 5;
+   opacity: 0.3;
+   animation: breathe 4s infinite ease-in-out;
+ }
+ 
+ .member.found {
+   background-color: rgba(255, 255, 255, 0.8);
+   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+   opacity: 0.8;
+ }
+ 
+ @keyframes breathe {
+   0% {
+     transform: translate(-50%, -50%) scale(0.8);
+     opacity: 0.3;
+   }
+   50% {
+     transform: translate(-50%, -50%) scale(1.5);
+     opacity: 0.8;
+   }
+   100% {
+     transform: translate(-50%, -50%) scale(0.8);
+     opacity: 0.3;
+   }
+ }
+ 
+ .center {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+   animation: centerBreathe 6s infinite ease-in-out;
+ }
+ 
+ @keyframes centerBreathe {
+   0% {
+     transform: scale(0.9);
+     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+   }
+   50% {
+     transform: scale(1.1);
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+   }
+   100% {
+     transform: scale(0.9);
+     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+   }
+ }
+ 
+ .centerIcon {
+   color: rgba(255, 255, 255, 0.8);
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+   .radar {
+     width: 90vmin;
+     height: 90vmin;
+   }
+ }
+ 
+ 

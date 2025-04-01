@@ -1,0 +1,144 @@
+.home{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: var(--primary-color);
+   margin-top:  1.5rem;
+   gap: 2rem;
+   min-height:90vh;
+   padding-bottom: 1rem;
+}
+
+.home p {
+   font-size: 1.3rem;
+   font-weight: 400;
+   text-align: center;
+   margin: 0;
+}
+
+.aboutContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.listContainer{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   padding: 1rem;
+   justify-content: space-between;
+}
+
+.listItem{
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   justify-content: center;
+   gap: .3rem;
+   flex: 1 1 50%;
+   margin-bottom: 1rem;
+}
+
+.listItem:first-child{
+}
+
+.listContainer p{
+   margin: 0;
+   text-align: left;
+   width: 100%;
+}
+
+.home p:nth-child(1) {
+   margin-bottom: 1rem;
+}
+
+.actionContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.redirectBtn {
+   border-radius: 8px;
+   border: 1px solid transparent;
+   padding: 0.6em 1.2em;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: #1a1a1a;
+   color: var(--background-color);
+   cursor: pointer;
+   transition: border-color 0.25s;
+ }
+ 
+ .redirectBtn:focus,
+ .redirectBtn:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
+
+ .redirectBtn:hover {
+   color: var(--background-color);
+ }
+
+@media (max-width: 960px) {
+   .home {
+      padding: 0 1rem;
+   }
+
+   .home h1 {
+      font-size: 2.5rem;
+   }
+
+   .listContainer{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .listItem{
+      width: 100%;
+      margin-bottom: 1rem;
+   }
+   .listContainer p{
+      text-align: center;
+   }
+
+   .redirectBtn{
+      margin-bottom: 2rem;
+   }
+}
+
+@media (max-width: 730px) {
+   .home h1 {
+      font-size: 2rem;
+   }
+
+   .home p{
+      font-size: 1rem;
+   }
+}
+@media (max-width: 630px) {
+   .home h1 {
+      font-size: 1.5rem;
+   }
+
+   .home p{
+      font-size: 1rem;
+   }
+}
+@media (max-width: 365px) {
+   .home h1 {
+      font-size: 1.5rem;
+      text-align: center;
+   }
+
+   .home p{
+      font-size: 1rem;
+      text-align: center;
+      padding: 0 1rem;
+   }
+}
